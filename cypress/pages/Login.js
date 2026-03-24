@@ -3,7 +3,7 @@ class Login {
       usernameInput: () => cy.get('#user-name'),
       passwordInput: () => cy.get('#password'),
       loginButton: () => cy.get('#login-button'),
-      errorMessage: () => cy.get('[data-test="error"]')
+      errorMessage: () => cy.get('h3[data-test="error"]')
   }
 
   introducirUsername(username){
